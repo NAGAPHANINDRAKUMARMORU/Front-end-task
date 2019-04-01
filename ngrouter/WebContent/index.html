@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MNPK</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular-route.min.js"></script>
+
+		<script src = "scripts/script.js"></script>
+				
+		<link href= "styles/style.css" rel="stylesheet"/>
+		
+		<base href=" "/>
+		
+	</head>
+	<body ng-app="Demo">
+	
+	
+	<div class=tables>
+	
+		<div id=sidebox>
+		<div ng-controller = "userdetailsController">
+				
+				
+				
+				<div id="sidebar">
+				<div class="paddingeffect">
+					<img class=UserProfilePic src={{user.avatar_url}}>	
+					<div class="username">{{user.name}}</div>
+					<div class="userlogin">{{user.login}}</div>
+					<br>
+					<div class="userbio">{{user.bio}}</div>
+					<br><br>
+       				<button class="userbioeditbutton">Edit bio</button>			            	  
+            		<div class="lineafterbio"></div><br>
+            		<div class="usercompany">
+            			<span ng-show=showobj(user.company)><img class=icon src="images/company.jpg"></span>{{user.company}}
+            			<br>
+            			{{user.blog}}
+            			<br>
+            			<span ng-show=showobj(user.location)><img class=icon src="images/location.png"></span>{{user.location}}
+            			<br>{{user.email}}
+            		</div>  
+            	</div>
+			</div>
+				
+				
+							
+
+		</div>	
+		</div>
+	
+	
+		<div id=topbox>
+			
+			<div class=buttons ng-controller="userdetailsController">
+				<a id="#!Overview" class="button btn1" href="#!Overview">Overview</a>
+                <a id="#!Repositories" class="button btn2" href="#!Repositories">Repositories<span class="subbutton"> {{user.public_repos }} </span></a>
+                <a id="#!Stars" class="button btn3" href="#!Stars">Stars<span class="subbutton"> {{ 5 }} </span></a>
+                <a id="#!Followers" class="button btn4" href="#!Followers">Followers<span class="subbutton"> {{user.followers }} </span></a>
+                <a id="#!Following" class="button btn5" href="#!Following">Following <span class="subbutton">  {{ user.following}} </span> </a>
+            </div>
+            <div class="lineafterbuttons"></div><br>
+ 
+		</div>
+	
+	
+		<div id=uibox>
+			 <ng-view></ng-view>
+	
+		</div>
+	
+	</div>
+	
+	</body>
+</html>

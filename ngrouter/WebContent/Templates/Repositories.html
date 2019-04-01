@@ -1,0 +1,30 @@
+				<div >
+                	<input class="textsearch" placeholder="Search repositories..." ng-model="searchT1" />
+					<select class="options" ng-model=searchT3.language >
+						
+						<optgroup label = "Select type" style="background-color :#ddd; "">
+						<option value="">Type:All</option>
+						<option value="Public">Public</option>
+						<option value="Private">Private</option>
+						<option value="Sources">Sources</option>
+					</select>
+					<select class="options" ng-model=searchT2.language>
+						<optgroup label = "Select language">
+						<option value="">Language:All</option>
+						<option value="JavaScript">JavaScript</option>
+						<option value="CSS">CSS</option>
+						<option value="HTML">HTML</option>
+						</select>
+					<button class="newbutton"><img class=icon src="images/newadd.png"> New</button>
+                </div>
+                <div class="lineaftersearch"></div>
+                <div ng-repeat = "r in repos | filter : searchT1 | filter : searchT2" >
+               		<div class="contentname"><h3> {{r.name}}</h3></div>
+               		<div class="contentfullname">{{r.full_name}}</div>
+               		<div class="contentdis">{{r.description}}</div>
+               		<div class="contentfoot">
+               			<span class="contentfootlanguage"><span class="dot" ng-show=showobj(r.language)></span>{{r.language}}</span>
+               			<span class="contentfootid"><span ng-show=showobj(r.license.spdx_id)><img class=icon src="images/licence.png"></span>{{r.license.spdx_id}}</span>
+               		</div>
+               		<div class="line"></div>
+               	</div>  

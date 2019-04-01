@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+ body{
+	font-family: Arial;
+} 
+
+
+
+
+.tables {
+	
+	width: 90%;
+	margin: 0 auto;
+}
+
+#topbox, #uibox ,#sidebox {
+	width:85%;
+	float: left;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+	.tables {
+		
+		width: 1024px;
+		margin-left:13% ;
+	}
+	
+	#topbox{
+		width: 73%;
+		float: left;
+	}
+	#uibox{
+		width: 73%;
+		float: left;
+	}
+	
+	#sidebox{
+		width: 25%;
+		float: left;
+	}
+	
+}
+
+@media only screen and (max-width: 1023px) {
+	.tables {
+		
+		width: 1024px;
+		margin: 0 auto;
+	}
+	
+	#topbox{
+		width: 94%;
+		margin-left:0% ;
+	}
+	#uibox{
+		width: 94%;
+		margin-left:0% ;
+	}
+	
+	#sidebox{
+		width: 25%;
+		margin-left:37% ;
+	}
+	
+}
+
+
+
+
+
+.lineafterbuttons{
+  height:-5px;
+  position: relative;
+  border-bottom: 1.2px solid graytext;
+	
+}
+.lineaftersearch{
+  height:25px;
+  position: relative;
+  border-bottom: 1.4px solid graytext;
+	
+}
+
+.line{
+  height:20px;
+  position: relative;
+  border-bottom: 1px solid #ddd;	
+}
+
+.lineafterbio{
+	left:10px;
+	width:200px;
+  height:10px;
+  position: relative;
+  border-bottom: 1.4px solid graytext;
+	
+	
+}
+.icon{
+	position:relative;
+	width :13px;
+	height: 13px;
+		
+}
+.UserProfilePic{
+	
+	position: relative;
+	
+	border-radius: 7%;
+	
+	position:relative;
+		
+	width :200px;
+	
+	font-size: 100px;
+	
+	padding: 10px 10px
+}
+
+.username{
+	position: relative;
+	left: 10px;
+	font-weight: bold;
+	font-size: 130%;
+}
+
+.userlogin{
+	position: relative;
+	left: 10px;
+  	font-weight:inherit;
+  	color:#696969;
+  	font-size: 100%;
+}
+
+.userbio{
+	position: relative;
+  left: 10px;
+   font-weight:inherit;
+  color:#696969;
+  font-size: 80%;
+	
+}
+
+.userbioeditbutton{
+	 left:10px;
+	 cursor: pointer;
+	 position:relative;
+	 background-color:#e6e6ff;
+	 text-align: center;
+	 font-weight:bold;
+	 outline: none;
+	 padding:7px 78px;
+	 font-size:90%;
+	 border: none;
+	 font-family:Lucida Console;
+	 border-radius:4px; 	
+}
+
+.usercompany{
+	position:relative;
+	left: 10px;
+	font-size: 80%;
+	color:highlighttext;
+	font-family: sans-serif;
+	line-height: 20px;	
+}
+
+.buttons{
+	
+	position: relative;
+	border-spacing: 10px;
+}
+a{
+	line-height: 50px;
+	cursor: pointer;
+	position:relative;
+  	background-color:transparent;
+ 	text-align: center;
+ 	outline: none; 
+ 	padding:13px;
+ 	font-size:110%;
+ 	color:black;
+ 	font-weight:bold;
+ 	border: none;
+ 	font-family:Lucida Console;
+/*  	border-radius: 3px; */
+ 	text-decoration: none;
+ 	
+}
+
+
+a:hover{
+	border-bottom: 2px solid  #e6e6ff;
+}
+
+ .a:focus{
+	border-bottom: 2px solid orange;	
+}
+ 
+
+:target {
+  color: red;
+}
+.subbutton{
+/* 	position:relative; */
+/* 	padding:2px 2px; */
+	background-color: #e6e6ff;
+	border-radius: 50%;
+}
+  
+ 
+.textsearch{
+	position: relative;
+	width: 55%;
+	height: 30px;
+	border-radius: 5px;
+	border-color: rgb(0,0,255);
+	outline: none;
+	font-size: 90%;
+/* 	left : 10px;	 */
+/* 	padding: 6px 80px; */
+/* 	color: graytext; */
+/* 	margin: 0; */
+/* 	font-family:Lucida Console; */
+/* 	font-style: oblique; */
+/* 	background-color:transparent; */
+/* 	display: inline-block; */
+/* 	transform-style: preserve-3d; */
+/* 	box-shadow: 0px 0px 1px 1px rgb(128, 128, 255); */
+	
+}
+input:focus{
+	box-shadow: 0px 0px 2px 1px rgb(0, 128, 255);
+	}
+.options{
+	position:relative;
+	left:10px;
+	align-items : center;
+	text-align: center;
+	padding:6px;
+	font-family: serif;
+	font-size: 15px;
+	border-radius:3px;
+	background-color: #e6e6ff;
+	outline: none; 
+}
+.options option{
+	cursor: pointer;
+	background-color: white;
+	color: gray;
+	width: 310px;
+	padding: 10px 15px;
+	height: 20px;
+	
+	}
+
+
+
+.newbutton{
+	color:white;
+	background-color:#2eb82e;
+	position:relative;
+	padding:7px;
+	left:30px;
+	border-radius:3px;
+	align-items : center;
+	text-align: center;
+	border: none; 
+	outline: none;
+}	
+
+.newbutton:active{
+	box-shadow: 0px 0px 10px 1px rgb(0, 128, 255);
+}
+.contentname{
+	color: #0059b3;
+	font-size: 120%;
+	font-weight:bolder;
+/* 	line-height: 50px; */
+	font-family: sans-serif;
+}
+.contentfullname{
+	font-size: 75%;
+	color:captiontext;
+	font-family: sans-serif;
+	line-height: 20px;	
+}
+.contentdis{
+	font-size: 90%;
+	color:highlighttext;
+	font-family: inherit;
+	line-height: 30px;	
+}
+.contentfoot{
+	font-size: 75%;
+	color:captiontext;
+	font-family: sans-serif;
+	line-height: 20px;	
+}
+.contentfootlanguage{
+	
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+}
+.contentfootid{
+	position:relative;
+	left: 30px;
+}
